@@ -1,0 +1,134 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# ===========================================
+# 通用 .gitignore 模板 (后端/数据库项目适用)
+# ===========================================
+
+# --- 环境与机密文件 ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# --- 数据库相关 ---
+# 本地 SQLite 数据库（如果你在本地测试用）
+*.db
+*.sqlite
+*.sqlite3
+# 数据库导出/转储文件（除非项目需要，一般不提交）
+*.sql
+*.dump
+*.bak
+
+# --- 日志与运行时数据 ---
+*.log
+logs/
+pids/
+*.pid
+*.seed
+
+# --- 操作系统生成文件 ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# --- IDE / 编辑器配置 ---
+# 虽然有些团队会共享部分配置，但通常建议忽略
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.settings/
+.project
+.classpath
+*.swp
+*.swo
+*~
+
+# --- 依赖与构建产物 (通用) ---
+node_modules/
+dist/
+build/
+target/
+bin/
+obj/
+*.class
+*.jar
+*.war
+*.ear
+*.exe
+*.dll
+*.so
+*.dylib
+*.o
+*.obj
+
+# --- 测试与覆盖率 ---
+coverage/
+.nyc_output/
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+
+# --- 缓存文件 ---
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+__pycache__/
+*.py[cod]
+
+
+# --- AI 编程助手/代理 (AI Coding Assistants & Agents) ---
+
+# 通用 AI 代理说明文件（若团队不共享，可忽略）
+# AGENTS.md
+# .agent/
+# *.agent
+
+# Claude Code (Anthropic)
+.claude/
+.claude/settings.local.json
+CLAUDE.md
+.claudeignore
+
+# Cursor IDE
+.cursor/
+.cursorrules
+.cursorignore
+
+# GitHub Copilot
+.copilot/
+.github/copilot-instructions.md
+
+# Aider
+.aider*
+# 如果需要版本控制 .aiderignore，可取消下一行注释
+# !.aiderignore
+
+# Windsurf
+.windsurf/
+.windsurfrules
+
+# Continue.dev
+.continue/
+.continuerc.json
+
+# Codeium / Tabnine / Cody 等其他工具
+.codeium/
+.tabnine/
+.cody/
